@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 """
-This module provides basic mathematical operations such as addition using type annotations.
+This module provides basic mathematical operations such as 
+addition using type annotations.
 """
+
 
 def add(a: float, b: float) -> float:
     """
