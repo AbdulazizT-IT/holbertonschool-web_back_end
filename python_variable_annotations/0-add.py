@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-This module provides basic mathematical operations such as 
+This module provides basic mathematical operations such as
 addition using type annotations.
 """
 
