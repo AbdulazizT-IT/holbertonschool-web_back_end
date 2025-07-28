@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """
-This module provides utility functions for converting values using type annotations.
+This module provides utility functions for
+converting values using type annotations.
 """
 
 
