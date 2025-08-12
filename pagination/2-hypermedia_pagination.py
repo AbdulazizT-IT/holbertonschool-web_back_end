@@ -54,7 +54,9 @@ class Server:
         return data[start:end]
 
     def get_hyper (self, page: int = 1, page_size: int = 10) -> dict:
-
+        """
+        Get paginated data with hypermedia metadata.
+        """
         start, end = index_range(page, page_size)
         data = self.dataset()
         total_items = len(self.dataset())
