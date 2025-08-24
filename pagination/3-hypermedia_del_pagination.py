@@ -29,13 +29,14 @@ class Server:
         """Dataset indexed by sorting position, starting at 0"""
         if self.__indexed_dataset is None:
             dataset = self.dataset()
-            self.__indexed_dataset = {i: dataset[i] for i in range(len(dataset))}
+            self.__indexed_dataset = {
+                i: dataset[i] for i in range(len(dataset))}
         return self.__indexed_dataset
 
     def get_hyper_index(self, index: int = None, page_size: int = 10) -> Dict:
         """Returns the hypermedia pagination result"""
         assert 0 <= index < len(self.indexed_dataset()), "Index out of range"
-        
+
         # Start from the given index and get the current page
         data = []
         current_index = index
