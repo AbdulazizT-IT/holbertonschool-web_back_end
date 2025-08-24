@@ -11,7 +11,8 @@ export default class Car {
 
   // ميثود لنسخ الكائن
   [cloneSymbol]() {
-    return new Car(this._brand, this._motor, this._color);
+    const newCar = new this.constructor(this._brand, this._motor, this._color); // استخدم `this.constructor` لضمان استنساخ النوع الصحيح.
+    return newCar;
   }
 
   // ميثود للعودة بالكائن نفسه بعد النسخ
